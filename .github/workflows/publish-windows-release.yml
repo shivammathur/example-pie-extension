@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Get the extension matrix
         id: extension-matrix
-        uses: php/php-windows-builder/extension-matrix@v1
+        uses: shivammathur/php-windows-builder/extension-matrix@master
   build:
     needs: get-extension-matrix
     runs-on: ${{ matrix.os }}
